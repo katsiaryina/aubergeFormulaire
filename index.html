@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Service de traiteur Le Cliff - Buffet froid</h2>
+    <p>
+      <span class="bold">Créez-le vous-même! </span>Minimum de 20 personnes.
+      Services non inclus. Vaiselle compostable incluse.
+    </p>
+
+    <!-- Name -->
+    <div>
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" />
+    </div>
+
+    <!-- Company -->
+    <div>
+      <label for="company">Compagnie</label>
+      <input type="text" id="company" name="phone" />
+    </div>
+
+    <!-- Phone -->
+    <div>
+      <label for="phone">Téléphone</label>
+      <input type="tel" id="phone" name="phone" required />
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label for="email">Courriel</label>
+      <input type="text" id="email" name="email" />
+    </div>
+
+    <!-- Event date -->
+    <div>
+      <label for="eventDate">Date de l'événement</label>
+      <input type="date" name="eventDate" id="eventDate" />
+    </div>
+
+    <!-- Event Location -->
+    <div>
+      <label for="eventLocation">Lieu de l'événement</label>
+      <input type="text" name="eventLocation" id="eventLocation" />
+    </div>
+
+    <!-- Number of guests -->
+    <label for="guestNum">Nombre de convives</label>
+    <input type="number" name="guestNum" id="guestNum" min="20" value="20" />
+
+    <h3>Variété de sandwichs</h3>
+    <p class="red-price">1 choix : 2, 00$ 2 choix: 2,50$</p>
+    <!-- Checkbox buffet froid -->
+    <section class="sandwich-menu">
+      <h4>Faîtes votre choix</h4>
+      <div>
+        <input type="checkbox" name="choice" value="legumes" id="legumes" />
+        <label for="legumes">
+          LE LÉGUMES GRILLÉS: panini, poivron rouge, courgette, oignon rouge,
+          chèvre doux</label
+        >
+      </div>
+      <div>
+        <input type="checkbox" name="choice" value="poulet" id="poulet" />
+        <label for="poulet"
+          >LE POULET FARCI : pain farci de salade de poulet, échalotte,
+          celeri</label
+        >
+      </div>
+
+      <div>
+        <input type="checkbox" name="choice" value="volubile" id="volubile" />
+        <label for="volubile"
+          >LE VOLUBILE : croissant, salade aux œufs, persil frais et paprika
+          fumé</label
+        >
+      </div>
+
+      <div>
+        <input type="checkbox" name="choice" value="paysanne" id="paysanne" />
+        <label for="paysanne"
+          >LA PAYASANNE : baguette, jambon, fromage suisse, laitue, mayonnaise
+          moutarde et miel</label
+        >
+      </div>
+
+      <div>
+        <input type="checkbox" name="choice" value="costaud" id="costaud" />
+        <label for="costaud"
+          >LE COSTAUD: baguette, roast beef, cornichon, mayonnaise et
+          Dijon</label
+        >
+      </div>
+
+      <div>
+        <input type="checkbox" name="choice" value="fume" id="fume" />
+        <label for="fume"
+          >LE FUMÉ : bagel, tartinade de saumon du Cliff, oignon rouge et câpre
+          +1$</label
+        >
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          name="choice"
+          value="traditionnels"
+          id="traditionnels"
+        />
+        <label for="traditionnels"
+          >LES TRADITIONNELS : pain tranché, choix de salade aux œufs, salade au
+          jambon ou salade de poulet</label
+        >
+      </div>
+    </section>
+
+    <!-- Variete de salade -->
+    <h3>Variete salade</h3>
+    <h2>1 choix : 1,50$ | 2 choix : 2,00$ | 3 choix : 2,50$</h2>
+    <section class="sandwich-menu">
+      <h4>Faîtes votre choix</h4>
+      <div>
+        <input
+          type="checkbox"
+          name="saladChoice"
+          value="italienne"
+          id="italienne"
+        />
+        <label for="italienne">
+          L’ITALIENNE : penne, céleri, oignon, chutney de tomate séchée, feta,
+          persil frais, vinaigrette crémeuse
+        </label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          name="saladChoice"
+          value="couscous"
+          id="couscous"
+        />
+        <label for="couscous"
+          >LA COUSCOUS : couscous à l’orange et canneberges séchées
+        </label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          name="saladChoice"
+          value="betterave"
+          id="betterave"
+        />
+        <label for="betterave"
+          >LA BETTERAVE : betterave jaune, tomate cerise, fève verte, chèvre,
+          vinaigrette à l’érable
+        </label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          name="saladChoice"
+          value="energique"
+          id="energique"
+        />
+        <label for="energique"
+          >L’ÉNERGIQUE : pommes de terre grelot, oignon rouge, céleri, lardon,
+          cornichon, mayonnaise
+        </label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="saladChoice" value="orzo" id="orzo" />
+        <label for="orzo"
+          >L’ORZO : orzo, petit pois vert, céleri, oignon, poivron rouge,
+          mayonnaise au pesto
+        </label>
+      </div>
+    </section>
+
+    <!-- Variété de plateaux d'accompagnement -->
+    <h3>Variété de plateaux d'accompagnement</h3>
+    <section class="accompagnement-menu">
+      <div>
+        <input
+          type="checkbox"
+          name="AccompagnementChoice"
+          value="marinade"
+          id="marinade"
+        />
+        <label for="marinade"> 1,25$ / personne </label>
+      </div>
+      <ul>
+        <li>PLATEAU DE MARINADES</li>
+      </ul>
+
+      <div>
+        <input
+          type="checkbox"
+          name="AccompagnementChoice"
+          value="trempette"
+          id="trempette"
+        />
+        <label for="trempette"> 2,00$ / personne </label>
+      </div>
+      <ul>
+        <li>PLATEAU, crudités et trempette</li>
+        <li>
+          TREMPETTE TRADITIONNELLE, composée de crème sure, salsa et fromage,
+          servi avec chips de maïs
+        </li>
+        <li>
+          TREMPETTE GUACAMOLE, composée de guacamole, tomates cerises, maïs et
+          feta, servi avec chips de maïs
+        </li>
+      </ul>
+
+      <div>
+        <input
+          type="checkbox"
+          name="AccompagnementChoice"
+          value="poisson"
+          id="poisson"
+        />
+        <label for="poisson"> 2,50$ / personne </label>
+      </div>
+      <ul>
+        <li>
+          TREMPETTE POISSON, composé de la tartinade de saumon fumé du Cliff,
+          servi avec pitas et craquelins
+        </li>
+        <li>PLATEAU, fromages en cube et raisins</li>
+        <li>PLATEAU, crudités et trempette</li>
+      </ul>
+
+      <div>
+        <input
+          type="checkbox"
+          name="AccompagnementChoice"
+          value="fin"
+          id="fin"
+        />
+        <label for="fin"> 3,50$ / personne </label>
+      </div>
+      <ul>
+        <li>
+          PLATEAU FIN, charcuteries fines, terrines, pâtés, olives, marinades et
+          craquelins
+        </li>
+        <li>
+          PLATEAU FIN, fromages fins et en cubes, gelées, raisins et craquelins
+        </li>
+        <li>
+          PLATEAU, crevettes, pépites de saumon frais fumé maison et ses
+          condiments
+        </li>
+      </ul>
+    </section>
+
+    <!-- Variété de desserts -->
+    <h3>Variété de desserts</h3>
+    <section class="desert-menu">
+      <div>
+        <input
+          type="checkbox"
+          name="desertChoice"
+          value="desertDuJour"
+          id="desertDuJour"
+        />
+        <label for="desertDuJour">Dessert du jour: 2,50$ / personne </label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          name="desertChoice"
+          value="dessertsVaries"
+          id="dessertsVaries"
+        />
+        <label for="dessertsVaries"
+          >Plateau de desserts varies: 3,00$ / personne
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" name="desertChoice" value="biscuits" />Plateau
+          de biscuits: 2,50$ / personne
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" name="desertChoice" value="pouding" />Pouding
+          chômeur à l'érable: 3,50$ / personne
+        </label>
+      </div>
+    </section>
+
+    <h2 class="pricePink" id="price"></h2>
+
+    <button type="submit" id="submit" name="submit">Soumettre</button>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
